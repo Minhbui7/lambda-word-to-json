@@ -5,6 +5,8 @@ The Lambda function will scan the Word Document file, detect tables, convert the
 The new modified document is ingested into kendra for retrieval by a LLM using Kendra as datasource for RAG and increase accuracy by providing JSON-formated text. 
 The Lambda is automatically triggered by an S3 event trigger when a new word document is PUT in the S3 bucket (with extension docx).
 
+![Architecture](https://github.com/Minhbui7/lambda-word-to-json/blob/224d299d17dcb12b56f3b1b32b5bca3019c4ad62/Lambda%20converter%20Word%20doc%20table%20to%20jason%20Diagram.drawio.png)
+
 The steps are as follow:
 1. Create Lambda function
    You will need to specify the Kendra index ID and ARN details in the Lambda code. 

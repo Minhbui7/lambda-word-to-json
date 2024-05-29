@@ -7,10 +7,11 @@ The Lambda is automatically triggered by an S3 event trigger when a new word doc
 
 The steps are as follow:
 1. Create Lambda function
-2. Create Lambda layer for Docx library and attach it to Lambda
-3. Modify Lambda execution role to give S3 and Kendra permissions
-4. Create an S3 bucket
-5. Configure S3 event triggers on PUT actions to invoke Lambda
-6. Test by uploading a Docx document to S3 bucket
+   You will need to specify the Kendra index ID and ARN details in the Lambda code. 
+3. Create Lambda layer for Docx library and attach it to Lambda
+4. Modify Lambda execution role to give S3 and Kendra permissions
+5. Create an S3 bucket
+6. Configure S3 event triggers on PUT actions to invoke Lambda
+7. Test by uploading a Docx document to S3 bucket
    
 Details instructions WIP
